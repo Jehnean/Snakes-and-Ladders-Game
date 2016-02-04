@@ -22,9 +22,14 @@ function roll() {
     } else {
       // var for current position and store current position
       currentPosition = $('.player').attr('id');
+      console.log(currentPosition);
+      // current position + new 
+      var nextPosition = parseInt(currentPosition) + rollResult;
+      console.log(nextPosition);
       // Clear player cell 
       $('.player').removeClass('player'); 
       // make new position .player 
+      $('#'+nextPosition).addClass('player');
     }
 }
 

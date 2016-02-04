@@ -1,42 +1,57 @@
 /* Game Board */ 
 
-#board {
-  /*background: url("../img/Game-Board-Snakes-and-Ladders-Full_no_boarder.gif");
-  background-size: cover;*/
-  width: 100%;
+.first-container {
+  margin: auto 0;
+  background-color: #f7f7f7; 
+  display: block;
   margin-top: 80px; 
-  min-height: 600px; 
-  z-index: -1;
 
 }
 
-tr {
-  background: purple; 
+.container {
+  margin: 0 auto;
+  background-color: #f7f7f7; 
+  display: block;
+
+}
+
+.board {
+}
+
+.row {
+    margin: 0 auto;
+    padding: 0; 
 }
 
 .cell {
-  width: 50px;
-  height: 50px; 
-  color: red;
+  min-width: 60px;
+  min-height: 60px; 
   display: inline-block;
-  border: 1px purple;  
-  background-color: red; 
+  margin: 0; 
+  padding: 0;  
+  border: 1px solid #666;
+}
+
+.gameDisplay {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+
+  letter-spacing: 1px;
+  padding: 16px 25px;
+  border: 1px solid #666;
+  margin: 0 0 3% 6%; 
+  background-color: lightblue; 
+
+  display: inline-block;
+
 }
 
 /* Site Style */
 
-td {
-  height: 60px; 
-  width: 60px;
-  float: left; 
-  border: 2px; 
-}
-
 body {
 	font-family: Lora,'Times New Roman',serif;
-
     color: #404040;
-    line-height: 1.5; 
 }
 
 h1 {
@@ -46,83 +61,20 @@ h1 {
     text-align: center;
 }
 
-h2 {
-	margin-bottom: 5%;  
-	font-size: 1.5em; 
-	font-weight: 800;
-
-
-}
-
-ul
-{
-    list-style-type: none;
-    margin: 0; 
-    padding: 0; 
+.player {
+  background-color: orange; 
+  height: 20px;
+  width: 20px; 
 }
 
 
-.input-blog-post {
-	padding: 1.1em; 
-	color: #333;
-	width: 80%; 
-
-}
-
-hr.small {
-    color: #fff;
-    max-width: 100px;
-    margin: 15px auto;
-    border: 0;
-    border-top: 4px solid #fff;
-}
-
-.intro-header {
-	text-shadow: none;
-	color: #fff; 
-	background-color: #808080;
-  	background: no-repeat center center;
-  	background-attachment: scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-	margin-bottom: 50px;
-	display: block; 
-	min-height: 500px; 
-}
-
-.site-heading {
-	padding: 20% 0;
-}
-
-.post-preview > a {
-  color: #404040;
-  font-size: 1.5em; 
-  line-height: 1.5em; 
+p {
+  font-size: 2em; 
+  margin-top: 20%; 
+  display: block;
   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-  text-decoration: none; 
-}
-.post-preview > a:hover,
-.post-preview > a:focus {
-  text-decoration: none;
-  color: #0085a1;
-}
-
-.post-meta {
-	font-style: italic;
-	color: #333; 
-}
-
-.subheading {
-	font-size: 2em; 
-	line-height: 1.2; 
-	margin-top: 30px; 
-	display: block;
-	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-	font-weight: 300; 
-	text-align: center;
-
+  font-weight: 300; 
+  text-align: center;
 }
 
 /* Button Styles */
@@ -137,22 +89,20 @@ hr.small {
   float: left;
 
 }
-.btn {
+button.roll-dice {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 1px;
-  border-radius: 0;
   padding: 16px 25px;
-  margin-left: 2%; 
-  color: #333;
-  background-color: #f7f7f7;
-  border-color: #ccc;
-  width: 16%;
+  border: 1px solid #666;
+  margin-bottom: 3%; 
+  background-color: lightgreen; 
+
 }
-.btn:hover,
-.btn:focus {
+button:hover,
+button:focus {
   background-color: #0085a1;
   border: 1px solid #0085a1;
   color: white;
@@ -160,29 +110,6 @@ hr.small {
   text-shadow: none;
   background: #0085a1;
 }
-
-
-.pager {
-  margin: 20px 0 0;
-}
-.pager li > a,
-.pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  padding: 15px 25px;
-  background-color: white;
-  border-radius: 0;
-}
-.pager li > a:hover,
-.pager li > a:focus {
-  color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
-}
-
 
 footer {
   padding: 50px 0 65px;

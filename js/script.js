@@ -1,4 +1,5 @@
-
+var player = 0; 
+var currentPosition = 0; 
 
 // Assign IDs to Cells 
 function setCellIds() {
@@ -15,9 +16,18 @@ $.each($(".cell"), function(index, cellElement) {
 function roll() {
     // store roll result of 1-6 
     var rollResult = Math.floor((Math.random()*6)+1);
-    // add roll result to id number and add player class
-    $('#'+rollResult).addClass('player');  
+    if (player === 0) {
+      $('#'+rollResult).addClass('player');
+      player = rollResult; 
+    } else {
+      // var for current position and store current position
+      currentPosition = $('.player').attr('id');
+      // Clear player cell 
+      $('.player').removeClass('player'); 
+      // make new position .player 
+    }
 }
+
 // Function for new turn and current position 
 function turn(curPos) {
   var newPos = curPos+roll(); 
@@ -31,8 +41,9 @@ function rollDice() {
 }
 
 
-// make player current position 
-// Set current position to -1 
-// make dieRoll with Math.floor(Math.random() * 6) + 1;
 // add results of dieRoll to player current position 
 // highlight cell id of player current position 
+
+
+// on click clear current position of player class 
+// add new value to stored current position 

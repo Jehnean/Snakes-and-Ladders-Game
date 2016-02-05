@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Synopsis
 
 JavaScript Snakes and Ladders Game project for GA WDI 26. A simple Snakes and Ladders game.
@@ -75,7 +74,7 @@ Tried to follow best preactices in the code
 Yes 
 
 Total: Your instructors will give you a total score on your project between:
-=======
+
 Synopsis
 
 JavaScript Snakes and Ladders Game project for GA WDI 26. A simple Snakes and Ladders game. 
@@ -107,4 +106,3 @@ Contributors
 License
 
 N/A
->>>>>>> b0fcd10c72ce6ac7c3415db9daf18a51e04f551b

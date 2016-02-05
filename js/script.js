@@ -28,15 +28,14 @@ var SnakesAndLadders = {
     25: 7
 };
 
-// var snakeOrLadderSpace = Object.keys(SnakesAndLadders); 
-
-// function checkForSnakeOrLadder(nextPosition) {
-//   if (snakeOrLadderSpace.indexOf(nextPosition) >= 0 ) {
-//     console.log("HIT"); 
-//     nextPosition = SnakesAndLadders[nextPosition]; 
-//   }
-//   return nextPosition; 
-// }
+function checkForSnakeOrLadder(nextPosition) {
+  if (nextPosition in SnakesAndLadders) {
+    var newPosition = SnakesAndLadders[nextPosition];
+    console.log("Transported to", newPosition);
+    nextPosition = newPosition; 
+  }
+  return nextPosition; 
+}
 
 
 function setupPlayer() { 
@@ -52,6 +51,7 @@ function setupPlayer() {
 function roll() {
     // store roll result of 1-6 
     rollResult = Math.floor((Math.random()*6)+1);
+    console.log("Roll was:", rollResult);
     // IF the player is not on the board
     if ( player === 0 ) {
       setupPlayer(); 
@@ -69,7 +69,7 @@ function roll() {
     };
   // Saving the next position in the console
     console.log(nextPosition);
-    // nextPosition = checkForSnakeOrLadder(nextPosition); 
+    nextPosition = checkForSnakeOrLadder(nextPosition); 
     // Clear player cell 
     $('.player').removeClass('player'); 
     // make new position .player 

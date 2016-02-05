@@ -6,6 +6,11 @@ JavaScript Snakes and Ladders Game project for GA WDI 26. A simple Snakes and La
 
 Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
+Code Example images: 
+- https://github.com/Jehnean/Snakes-and-Ladders-Game/blob/master/screenshots-of-js/Screen%20Shot%202016-02-05%20at%2010.16.34%20AM.png?raw=true
+- https://github.com/Jehnean/Snakes-and-Ladders-Game/blob/master/screenshots-of-js/Screen%20Shot%202016-02-05%20at%2010.16.43%20AM.png?raw=true
+- https://github.com/Jehnean/Snakes-and-Ladders-Game/blob/master/screenshots-of-js/Screen%20Shot%202016-02-05%20at%2010.16.53%20AM.png?raw=true
+
 #Motivation
 
 Creating an MVP of this game to improve upon later.
@@ -24,7 +29,7 @@ N/A
 
 #Contributors
 
-@Jehnean
+Thanks to Dan, Ilias, and Alex!
 
 #License
 
@@ -40,7 +45,6 @@ As a player, I want to know how to play the game so I can formulate a strategy t
 As a player, I want to know the criteria for winning the game. 
 As a player, I want to know the rules so I know what I can and can’t do. 
 As a player, I want at least one opponent to play against. 
-
 As a player, I want to be able to reset the game so I can start over.
 As a player, I want to be able to see all the pieces on the board so I can see where I rank. 
 As a player, I want to be able to clearly see which piece is mine. 
@@ -49,7 +53,6 @@ As a player, I want to see who has won.
 As a player, I want be notified if the game has ended, and who won. 
 As a player, I want to land on ladder spaces to advance more quickly. 
 As a player, I want to avoid snake spaces to so I don’t fall behind. 
-
 
 ###Technical Requirements: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
 
@@ -67,42 +70,9 @@ Created a working Snakes and Ladders game. Though, I feel the UX would benefit f
 
 ###Code Quality: Did you follow code style guidance and best practices covered in class, such as spacing, modularity, and semantic naming? Did you comment your code as your instructors have in class?
 
-Tried to follow best preactices in the code 
+Yes - Tried to follow best preactices in the code and commit code
 
 ###Deployment: Did you deploy your application to a public url using GitHub Pages?
 
-Yes 
+Yes - http://snakes-and-ladders-game-by-jehnean.bitballoon.com/
 
-Total: Your instructors will give you a total score on your project between:
-
-Synopsis
-
-JavaScript Snakes and Ladders Game project for GA WDI 26. A simple Snakes and Ladders game. 
-
-Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-Motivation
-
-Creating an MVP of this game to improve upon later. 
-
-Installation
-
-In browser based game. No installation required. 
-
-API Reference
-
-N/A
-
-Tests
-
-N/A
-
-Contributors
-
-@Jehnean
-
-License
-
-N/A

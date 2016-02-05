@@ -15,13 +15,26 @@ function setCellIds() {
 // Make snakesAndLadders Object with key : value
 var snakesAndLadders = {
     12 : 16, 
-    14 : 48, 
-    19 : 60, 
+    19 : 22,
+
+    25 : 17,
+    28 : 20,
+
+    32 : 22, 
+    37 : 42,
+
+    47 : 27, 
+
     55 : 76,
+
+    62 : 50,
+
     78 : 97,
-    99 : 29,
-    47 : 18,
-    25 : 7
+
+    83 : 72, 
+    85 : 91,
+
+    99 : 80,
 };
 
 // Check current space for snake or ladder and move player
@@ -38,11 +51,20 @@ function checkForSnakeOrLadder(nextPosition) {
 function assignSnakesAndLadders() {
   for(var key in snakesAndLadders) {
     if (key < snakesAndLadders[key]) {
+      Object.keys(snakesAndLadders)
       console.log('key: ' + key + '\n' + 'value: ' + snakesAndLadders[key]); 
+      $(key).addClass('ladder'); 
+
+      if (key === $('#')){
+        $(".cell").addClass('ladder'); 
+      }
+
+
       
       // ================= Help ================= //
       // Use the value of key to to find matching .cell id number and add class .ladder
       // Maybe something  with $('.cell').addClass('ladder'); ?
+
     }
     if (key < snakesAndLadders[key]) {
       
@@ -53,6 +75,9 @@ function assignSnakesAndLadders() {
   }
 }
 
+assignSnakesAndLadders(); 
+
+
 // Function for roll 
 function roll() {
   rollResult = Math.floor((Math.random()*6)+1);
@@ -62,7 +87,6 @@ function roll() {
     // Add the ID to the rollREsult and add the player class
     $('#'+rollResult).addClass('player');
   }
-
   player = rollResult;
     
     // var for current position to get the player class and assign the id 
@@ -73,7 +97,7 @@ function roll() {
     var nextPosition = parseInt(currentPosition) + rollResult;
     // If your next position is more than 100, alert
     if (nextPosition >= 100) {
-      console.log("YOU WIN"); 
+      alert("YOU WIN"); 
     }
 
   // Saving the next position in the console

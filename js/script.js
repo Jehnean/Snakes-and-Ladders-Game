@@ -4,8 +4,8 @@ var rollResult;
 
 // Assign IDs to Cells 
 function setCellIds() {
-    // Each .cell look at index and cellElement
-$.each($(".cell"), function(index, cellElement) {
+  // Each .cell look at index and cellElement
+  $.each($(".cell"), function(index, cellElement) {
     // iterate through index
     var id = index + 1; 
     // Append with the id and at p text 
@@ -23,9 +23,9 @@ var SnakesAndLadders = {
     19 : 60, 
     55 : 76,
     78 : 97,
-    99: 29,
-    47: 18,
-    25: 7
+    99 : 29,
+    47 : 18,
+    25 : 7
 };
 
 function checkForSnakeOrLadder(nextPosition) {
@@ -37,26 +37,20 @@ function checkForSnakeOrLadder(nextPosition) {
   return nextPosition; 
 }
 
-
-function setupPlayer() { 
-  // If player position is 0 (not on the board)
-      // highlight cell id of player current position 
-      $('#'+rollResult).addClass('player');
-      // player is equal to the roll result 
-      player = rollResult;
-}
-
-
 // Function for roll 
 function roll() {
-    // store roll result of 1-6 
-    rollResult = Math.floor((Math.random()*6)+1);
+  rollResult = Math.floor((Math.random()*6)+1);
     console.log("Roll was:", rollResult);
-    // IF the player is not on the board
-    if ( player === 0 ) {
-      setupPlayer(); 
-    }
+  // If player position is 0 (not on the board)
+  if ( player === 0 ) {
+    // Add the ID to the rollREsult and add the player class
+    $('#'+rollResult).addClass('player');
+  }
+
+  player = rollResult;
     
+    
+
     // var for current position to get the player class and assign the id 
     currentPosition = $('.player').attr('id');
     // log the current position 
@@ -65,8 +59,9 @@ function roll() {
     var nextPosition = parseInt(currentPosition) + rollResult;
     // If your next position is more than 100, alert
     if (nextPosition >= 100) {
-      alert("YOU WIN"); 
+      console.log("YOU WIN"); 
     };
+
   // Saving the next position in the console
     console.log(nextPosition);
     nextPosition = checkForSnakeOrLadder(nextPosition); 

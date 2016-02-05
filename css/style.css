@@ -17,6 +17,14 @@
 .board {
 }
 
+.snake {
+  background-color: #b19cd9; 
+}
+
+.ladder {
+  background-color: brown; 
+}
+
 .row {
     margin: 0 auto;
     padding: 0; 

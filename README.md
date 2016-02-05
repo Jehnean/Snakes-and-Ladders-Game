@@ -29,7 +29,7 @@ N/A
 
 #Contributors
 
-@Jehnean
+Thanks to Dan, Ilias, and Alex!
 
 #License
 

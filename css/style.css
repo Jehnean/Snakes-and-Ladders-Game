@@ -15,6 +15,11 @@
 }
 
 .board {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 513px;
+  max-height: 514px;
 }
 
 .snake {
@@ -27,16 +32,18 @@
 
 .row {
     margin: 0 auto;
-    padding: 0; 
+    padding: 0;
+    height: 49px;
+    width: 100%;        
 }
 
 .cell {
-  min-width: 60px;
-  min-height: 60px; 
+  height: 49px;
+  width: 47.7px;
   display: inline-block;
   margin: 0; 
   padding: 0;  
-  border: 1px solid #666;
+  border: 2px solid transparent;
 }
 
 .game-display {
@@ -57,21 +64,23 @@
 /* Site Style */
 
 body {
-	font-family: Lora,'Times New Roman',serif;
+  font-family: Lora,'Times New Roman',serif;
     color: #404040;
 }
 
 h1 {
-	font-size: 5em;
-	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 5em;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 800;
     text-align: center;
 }
 
 .player {
   background-color: orange; 
-  height: 20px;
-  width: 20px; 
+  height: 40px;
+  width: 40px;
+  border: 3px solid darkorange;
+  border-radius: 40px; 
 }
 
 

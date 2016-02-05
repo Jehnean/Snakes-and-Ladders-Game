@@ -22,7 +22,7 @@
 }
 
 .ladder {
-  background-color: brown; 
+  background-color: #cfbea5; 
 }
 
 .row {
@@ -39,7 +39,7 @@
   border: 1px solid #666;
 }
 
-.gameDisplay {
+.game-display {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 16px;

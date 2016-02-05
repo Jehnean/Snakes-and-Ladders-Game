@@ -23,68 +23,68 @@ var spot = {
   // Snakes and Ladders
   "3": {
     "direction": "up",
-    "to": "15",
+    "to": "51",
     "type": "ladder"
   },
   "6": {
     "direction": "up",
-    "to": "20",
+    "to": "27",
     "type": "ladder"
   },
   "20": {
     "direction": "up",
-    "to": "30",
+    "to": "60",
     "type": "ladder"
   },
   "36": {
     "direction": "up",
-    "to": "40",
+    "to": "55",
     "type": "ladder"
   },
   "63": {
     "direction": "up",
-    "to": "75",
+    "to": "95",
     "type": "ladder"
   },
   "68": {
     "direction": "up",
-    "to": "78",
+    "to": "98",
     "type": "ladder"
   },
   // snakes
   "99": {
     "direction": "down",
-    "to": "80",
+    "to": "69",
     "type": "snake"
   },  
   "91": {
     "direction": "down",
-    "to": "77",
+    "to": "61",
     "type": "snake"
   },
   "87": {
     "direction": "down",
-    "to": "69",
+    "to": "57",
     "type": "snake"
   },
   "65": {
     "direction": "down",
-    "to": "58",
+    "to": "52",
     "type": "snake"
   },
   "47": {
     "direction": "down",
-    "to": "37",
+    "to": "19",
     "type": "snake"
   },
   "34": {
     "direction": "down",
-    "to": "22",
+    "to": "1",
     "type": "snake"
   },
   "25": {
     "direction": "down",
-    "to": "20",
+    "to": "5",
     "type": "snake"
   }
 };
